@@ -15,15 +15,19 @@
 			<form>
 				<p>
 					<label for="initial_speed">Vitesse initiale :</label>
-					<input id="initial_speed" type="range" min="0" max="35" value="10" onchange="updateValues();" />
+					<input id="initial_speed" class="slider" type="range" min="0" max="35" value="10" />
 					<span id="initial_speed_value"></span>
 				</p>
 				<p>
 					<label for="initial_angle">Angle de lancer :</label>
-					<input id="initial_angle" type="range" min="0" max="90" value="60" onchange="updateValues();" />
+					<input id="initial_angle" class="slider" type="range" min="0" max="90" value="60" />
 					<span id="initial_angle_value"></span>
 				</p>
 				
+				<p class="frictions">
+				<input type="checkbox" name="frictions"><label for="fictions">Activer les frottements</label>
+
+				</p>
 			</form>
 			<p id="coord">Coordonnées : </p>
 			<button onclick="start=true;reset();">Lancer</button>

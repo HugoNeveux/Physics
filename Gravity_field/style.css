@@ -18,7 +18,7 @@ body {
 	text-align: center;
 	display: flex;
 	margin: auto;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	padding: 10px;
 }
@@ -39,4 +39,41 @@ body {
 #coord {
 	margin: auto;
 	width: 200px;
+}
+
+.frictions{
+	display: flex;
+	flex-direction: row;
+}
+
+/* slider */
+
+.slider {
+	width: 100%;
+	height: 15px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	transition: opacity .2s;
+	border-radius: 15px;
+}
+
+.slider:hover {
+	opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #4CAF50;
+  cursor: pointer;
 }

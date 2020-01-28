@@ -14,7 +14,6 @@ function deg2rad(deg) {
 function startGame() {	// Game initialisation
 	myGameArea.start();
 	myGamePiece = new component(30, 30, "red", 0, 576-30);	// Red square creation
-	updateValues();
 }
 
 function reset() {
