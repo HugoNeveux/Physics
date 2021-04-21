@@ -1,3 +1,3 @@
-# Physics Simulations
+# Physics
 
-A tiny physics simulator using HTML canvas and Javascript. 
+Physics animation in Javascript.
